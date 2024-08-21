@@ -1,0 +1,487 @@
+[12:01 PM] hrithik dubey (Unverified) (External)
+Oracle - HX516u#$
+ 
+Jenkins
+admin@123
+ 
+postgres
+
+HX516u#$
+ 
+[12:01 PM] hrithik dubey (Unverified) (External)
+Mysql
+
+root
+
+HX516u#$
+
+ Data:-
+	Its a useful information is called data
+Database:-
+ 	Collection of useful information. Each database can one or more tables
+DBMS:-
+	It's a software manages the databases,views,function,procedure etc
+SQL;
+	DDL (Data Definition Language)
+		CREATE
+			CREATE TABLE tablename(columname DATATYPE(SIZE) [CONSTRAINTTYPE],
+			columname DATATYPE(SIZE) [CONSTRAINTTYPE],...);
+		ALTER
+		DESC
+		RENAME
+		DROP
+	DML(Data Manuplation Language)
+		INSERT
+		SELECT
+		UPDATE
+		DELETE
+SQL Clauses:-
+	Filter something
+		FROM clause - filter and takes a table from the database
+		WHERE Clause - filter and takes a row or rows from the table rows
+		SELECT Clause - filter and takes a column or columns from the table
+		GROUP BY clause
+		HAVING clause
+		ORDER BY Clause
+		LIMIT clause
+		OFFSET Clause
+		FETCH
+		JOIN Clause
+		ON Clause
+		USING Clause
+
+ SQL:-
+	Create a database
+		create database databasename
+	Choose database
+		use databasename;
+	create table structure
+		create table tablename(columnname1 datatype,columnname2 datatype,...)
+		create table employee(id int,name varchar(50),age int,salary int);
+	Table structure 
+		desc tablename;
+	insert (add a row)
+		insert into tablename values(54,"Rajesh",45,76757);
+	update (update a row)
+		update tablename set columnname=newvalue,... where columnname=value;
+	delete 
+		delete from tablename where columnname=value;
+	select 
+
+JDBC API:-
+		DriverManager
+		Connection
+		Statement
+		PreparedStatement 
+		CallableStatement
+		ResultSet
+		
+accessmodifier class ClassName{
+	accessmodifier non-accessmodifier datatype variablename;
+	...
+	accessmodifier nonaccessmodfier returntype methodName(arg){
+		...	
+	}
+}
+Method or function:-
+	accessmodifier nonaccessmodfier returntype methodName(arg){
+		...	
+	}
+	
+	
+	void add(){
+		int no1,int no2,int total;
+		total=no1+no2;
+		sout(total);
+	}
+			
+	add();
+
+	void add(int no1,int no2,int total){
+		
+		total=no1+no2;
+		sout(total);
+	}
+	add(45,5,0);
+
+	void add(int no1,int no2){
+		
+		int total=no1+no2;
+		sout(total);
+	}
+	add(45,5,0);
+	===========================
+	int add(Passenger p){
+		
+		int total=no1+no2;
+		return total;
+	}
+	Passenger passenger1=new Passenger();
+	add(passenger1);
+	=======================-===
+	int add(int no1,int no2){
+		
+		int total=no1+no2;
+		return total;
+	}
+	int value=add(45,5);
+	int totalCost=value*4556;
+===============================
+	String add(int no1,int no2){
+		String message="welcome";
+		int total=no1+no2;
+		return message;
+	}
+	
+	String msg=add(34,5);//20202020
+	System.out.println(msg);
+
+==================================
+	Passenger add(int no1,int no2){
+		Passenger passenger1=new Passenger();			
+		return passenger1;
+	}
+	
+	=======================================
+method definition
+	void add(){ //implemented method
+		statements;
+	}
+method call
+	void add(); // unimplemented or abstract method 
+Class:-
+	1. Predefined Class
+		The classes which is already there in the system library
+		Scanner,String,System etc
+	2. Userdefined Class
+		The classes which is created by the programmer
+		Passenger, Booking, Train etc
+Inheritance:-
+	Make an relationship between the classes
+	extends - keyword
+	
+	Types of Inheritance
+	1. IS-A Inheritance (extends)
+	2. HAS-A Inheritance (creating an object one class into another class)
+
+Access Modifiers:-
+	Visibility
+class HexaTraining{
+
+	public void angularTrg(String intTr){
+		System.out.println("Internal trainer:"+intTr);
+	}
+	public void angularTrg(int intTr){
+		System.out.println("Internal trainer:"+intTr);
+	}
+	public void angularTrg(String exTr, int cost){
+		System.out.println("External trainer:"+exTr+"
+	}
+	public void angularTrg(String exTr, int cost,String venue){
+		System.out.println("External trainer:"+exTr+" "+"Cost:"+cost+" "+"Venue:"+venue);
+	}
+	public static void main(String[] args) {
+		HexaTraining hexa=new HexaTraining();
+		hexa.angularTrg("Vimala");
+
+	}
+	}
+
+	Polymorphism - 10 minutes
+	Abstraction
+	packages, accsss modfier, non access modifier - 20minutes
+	abstract class 
+	interface - 30 minutes
+	final keyword - 15 minutes
+	Exception Handling - 2 Hours
+
+	Java 8 Features
+		Functional interface
+		Lambda
+		Method Reference
+		Optional 
+		forEach
+		Streams API
+	Junit/Code Coverage
+	Wrapper Classes
+	Generics
+	Collection
+
+
+	Packages:-
+		package - collection of related class
+			- Organize your source code
+			- visibility
+			- Naming collision
+				
+			airtel - www.airtel.in
+				
+			Eclipse
+				-> airtel web
+					in.airtel.plans
+						- MonthlyPlan.java
+						- YearlyPlan.java
+						- Prepaid.java
+						- Postpaid.java
+					in.airtel.payment
+						- Upi.java
+						- 	CreditCard.java
+						- DebiCard.java
+						
+	final keyword:-
+		before a variable
+		before a method
+			
+		before a class
+	Interface:-
+		If a class has all the methods are abstract methods then mark your class as an interface.
+		
+		interface is similar to class
+		
+		100% abstraction
+
+Exception Handling:-
+===================
+	Exception is an abnormal condition arises during code execution(Runtime)
+	If exception happens during code runtime your program will get terminated abrubtly
+	It is a programmer responsiblity should anticipate and handle the exception so that u can terminate
+	smoothly
+
+	Two types of exception:-
+		Unchecked Exception or RuntimeException
+			An exception which extends RuntimeException class then that exception under the
+			unchecked exception type
+			
+			ArithmeticException, NullPointerException
+
+		Checked Exception
+			An exception which extends Exception class then that exception under the
+			checked exception type
+
+			ClassNotFoundException
+			IOException
+				
+	Array:-
+		
+
+		type[] arrName=new type[size];
+
+		int[] data=new int[5];//Array is holding list of int values
+		String[] str=new String[3];// Array is holding list of string objects
+		PostPaid pp=new PostPaid[3];// Array is hloding list PostPaid objects
+
+		int[] data1={3545,5656,354,55,54};
+		Adv:-
+			Array is random access
+			
+		Disadv:
+			Size is fixed. you cannot increase or decrease the size
+			When u have more of insertion / deletion u need to move your data
+
+
+		insertion deletion updation sort shuffle contains etc
+			
+Collection:-
+	it is collection of objects
+	size it grow and shrink
+	Each collection classes are backed by one datastructure algorithm
+	Collection frameworks has set of interfaces, abstract classes, concerete classes
+
+
+
+JDBC API - java.sql
+	 - set of interface and classes which help us to connect any database
+		DriverManager(C) - public static Connection getConnection(String url,String username,String password);
+		Connection(I) - connection reference it holds a connection session between java and db
+		Statement(I) - can create an statement object using connection obj
+			
+			- public boolean execute(String query));
+			- public ResultSet executeQuery(String query)
+			- public int executeUpdate(String query))	
+		PreparedStatement(I) - can create an prepared statement object using connection obj
+			
+			- public boolean execute();
+			- public ResultSet executeQuery()
+			- public int executeUpdate()	
+			ResultSet(I) - Resultset object hold result values return by the db
+				hasNext()
+				next()
+
+		CallableStatement(I)
+
+Step by Step for JDBC:-
+		Prerequstie:-
+			Download the jdbc driver and extract
+			Load the jdbc driver into the project
+		Step 1: Load the Driver.class  OR Registering the Driver.class
+			Class.forName("com.mysql.cj.jdbc.Driver")
+
+		Step 2: Create  a Connection object 
+			Connection con = DriverManager.getConnection(url,username,password);
+
+			url="jdbc:dbvendorname://ipaddress:portno/dbname"
+				jdbc:mysql://localhost:3306/employee
+			username=root
+			password=HX516u#$
+		Step 3: Write and execute the query
+			Statement stmt=con.createStatement();
+
+	
+
+Statement(I) - u can execute static sql query
+			- public boolean execute(String query) - DDL and DML;
+			- public ResultSet executeQuery(String query) -DML - SELECT
+			- public int executeUpdate(String query) -DML - INSERT,UPDATE,DELETE 
+
+			stmt.executeUpdate("insert into employee values(35,'abc',68,57755)");	
+			stmt.executeUpdate("update employee set name='gf',age=57,salary=3545 where id=123")
+PreparedStatement(I) - u can execute dynamic query
+			- public boolean execute() - DDL and DML;
+			- public ResultSet executeQuery() -DML - SELECT
+			- public int executeUpdate() -DML - INSERT,UPDATE,DELETE 
+			pstmt.executeUpdate("insert into employee values(?,?,?,?)");	
+			stmt.executeUpdate("update employee set name=?,age=?,salary=? where id=?")
+
+
+DO $$
+DECLARE
+	customer_data customer%ROWTYPE;
+	customer_cursor CURSORgbh  FOR SELECT * FROM customer LIMIT 5;
+BEGIN
+	OPEN customer_cursor;
+	LOOP
+		FETCH NEXT FROM customer_cursor INTO customer_data;
+		EXIT WHEN NOT FOUND;
+		RAISE NOTICE '%',customer_data;
+	END LOOP;
+	CLOSE customer_cursor;
+END $$;
+
+Spring Framework:-
+	Spring core - IOC, DI
+	AOP
+	Spring mvc
+
+	JdbcDemo
+		- JRE System Library -> Jar -> packages -> interfaces, classes, etc
+		- mysql-connector-j.9.0.0.jar
+		- junit-jupitor-5.jar
+	maven - project management tool
+		local repository - .m2
+		remote repository -
+
+	Spring Bean Configuration:-
+			1. XML Bean Configuration
+			2. Java Bean Configuration - @Configuration
+				2.1 @Bean
+					 @Bean
+    					 public Employee employee1(){// Bean Definition
+        					return new Employee();
+    					 }
+				2.2 Sterotype Annotation - @Component
+		
+		
+		GET http://localhost:8181/customer
+		GET http://localhost:8181/customer/898
+		GET http://localhost:8181/customer/989
+		GET http://localhost:8181/customer/34
+		GET http://localhost:8181/customer/545
+		POST http://localhost:8181/customer
+		PUT http://localhost:8181/customer
+		DELETE http://localhost:8181/customer/45		
+		DELETE http://localhost:8181/customer/78
+		DELETE http://localhost:8181/customer/898
+		DELETE http://localhost:8181/customer/4545
+
+
+
+		public interface CustomerService
+		{	
+			public List<Customer> getAllCustomers();
+			public Customer postCustomer(Customer customer);
+			public Customer putCustomer(Customer customer)
+			public Customer getCustomerById(int customerId)
+			public String deleteCustomerById(int customerId)
+		}
+			
+
+
+
+
+		Library
+			
+			BookSevice(I)
+			public Book addBook(Book book);
+			public List<Book> getAllBooks();
+			public Book getBookById(int bookId);
+			public Book updateBook(Book book);
+			public String deleteBookById(int bookId)
+
+
+			Spring web
+			Spring Data Jpa
+			postgres driver
+			spring boot devtools
+
+Mysql properties:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/springboot_mysql_example
+spring.datasource.username=root
+spring.datasource.password=YOUR_DB_PASSWORD
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+
+
+POstgresql properties:-
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/springbootdb
+spring.datasource.username=postgres
+spring.datasource.password=root@123
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.show-sql=true
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+
+Lombok
+JPA query generation method
+Hibernate Mapping
+hbm-ddl property
+@GeneratedValue
+Cascading Type
+microservice - user-microservice
+	       product-microservice
+	       order-service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
